@@ -15,7 +15,7 @@ const Hero = () => {
                         </p>
                         
                         <a href="/akucv.pdf" download="CV_Ramadhan Cahaya">
-                            <button className="flex flex-row gap-2 items-center justify-center bg-blue-500 rounded-lg px-6 py-2 text-slate-900 mt-6 leading-normal hover:bg-blue-600 transition-colors shadow-lg hover:shadow-blue-500/50">
+                            <button className="flex flex-row gap-2 items-center justify-center bg-blue-500 rounded-lg px-6 py-2 text-slate-900 mt-6 leading-normal">
                                 <Download size={18}/>
                                 Download My CV
                             </button>
