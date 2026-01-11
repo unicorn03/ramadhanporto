@@ -34,7 +34,7 @@ const Contact = () => {
     ];
 
     return (
-        <section id="contact" className="py-20 bg-slate-900 min-h-[50vh] flex flex-col justify-center items-center">
+        <section id="contact" className="md:py-20 pb-20 bg-slate-900 min-h-[50vh] flex flex-col justify-center items-center">
             <div className="text-center mb-12 px-4">
                 <h2 className="text-4xl font-bold text-white mb-4">
                     Contact <span className="bg-gradient-to-r from-blue-300 to-purple-500 bg-clip-text text-transparent">Me</span>

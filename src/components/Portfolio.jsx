@@ -18,11 +18,11 @@ const Portfolio = () => {
         },
         {
             id : 2,
-            title : "Peronal Portfolio",
+            title : "Personal Portfolio",
             description : "A personal portfolio website to showcase my skills, projects, and experiences as a web developer. It features a clean and modern design, responsive layout, and interactive elements to engage visitors.",
             tech : ["React", "Tailwind CSS", "Vite"],
             image : fotoWeb,
-            link : "",
+            link : "https://github.com/unicorn03/ramadhanporto",
         },
         {
             id : 3,
@@ -55,9 +55,9 @@ const Portfolio = () => {
     }
 
     return (
-        <section id="portfolio" className="py-20 bg-slate-900 h-screen flex justify-center items-center">
-            <div className="container w-full md:w-[80%] px-4 md:px-0 mx-auto group relative">
-                <h2 className="text-4xl font-bold text-white mb-7 text-center">My <span className="bg-gradient-to-r from-blue-300 to-purple-700 bg-clip-text text-transparent">Portfolio</span></h2>
+        <section id="portfolio" className="md:py-20 bg-slate-900 h-screen flex justify-center items-center">
+            <div className="container w-full md:w-[80%] pt-32 px-3 md:px-0 mx-auto group relative">
+                <h2 className="text-4xl font-bold text-white mb-8 text-center">My <span className="bg-gradient-to-r from-blue-300 to-purple-700 bg-clip-text text-transparent">Portfolio</span></h2>
                 <div className="bg-slate-800 rounded-2xl shadow-2xl overflow-hidden flex flex-col md:flex-row h-auto md:h-[500px] border border-slate-700">
                     <div className="md:w-1/2 h-64 md:h-full relative overflow-hidden">
                         <img loading="lazy" src={projects[currentIndex].image} alt={projects[currentIndex].title} className="rounded-r-lg brightness-90 w-full h-full object-cover transition-transform duration-500 hover:cursor-zoom-in" />
@@ -73,7 +73,7 @@ const Portfolio = () => {
                                 {projects[currentIndex].description}
                             </p>
                         </div>
-                        <div className="mt-auto mb-4 flex flex-wrap gap-2">
+                        <div className="md:mt-auto mt-4 md:mb-4 mb-2 flex flex-wrap gap-2">
                             {projects[currentIndex].tech.map((item, index) => (
                                 <span key={index} className="bg-slate-600 px-3 py-1 text-slate-300 text-sm rounded-full">
                                     {item}
@@ -90,10 +90,10 @@ const Portfolio = () => {
                         </div>
                     </div>
                 </div>
-                <button onClick={prevProject} className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 left-0 bg-slate-300 hover:bg-slate-600 transition-all z-10 hidden md:block rounded-full p-3">
+                <button onClick={prevProject} className="absolute top-1/2 translate-y-1/2 md:-translate-x-1/2 translate-x-0.5 left-0 bg-slate-300 md:hover:bg-slate-600 transition-all z-10 md:block rounded-full p-3">
                     <ChevronLeft size={24} />
                 </button>
-                <button onClick={nextProject} className="absolute top-1/2 -translate-y-1/2 translate-x-1/2 right-0 bg-slate-300 hover:bg-slate-600 transition-all z-10 hidden md:block rounded-full p-3">
+                <button onClick={nextProject} className="absolute top-1/2 translate-y-1/2 md:translate-x-1/2 translate-x-0.5 right-0 bg-slate-300 md:hover:bg-slate-600 transition-all z-10 md:block rounded-full p-3">
                     <ChevronRight size={24} />
                 </button>
             </div>
